@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Niqo Services — Papier en-tête A4</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Inter:wght@500&family=Source+Sans+3:wght@400&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:210mm; }
+  .sheet { position:relative; width:210mm; min-height:297mm; background:#fff; padding:24mm 22mm;
+    font-family:'Source Sans 3',sans-serif; color:#020617; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  /* header */
+  .head { display:flex; align-items:center; gap:6mm; padding-bottom:6mm; border-bottom:1px solid #A16207; }
+  .head .seal { width:16mm; height:16mm; }
+  .head .sep { width:1px; height:13mm; background:#CBD5E1; }
+  .head .wm .n { font-family:'Manrope',sans-serif; font-weight:600; font-size:19pt; letter-spacing:0.04em; line-height:1; color:#0F172A; }
+  .head .wm .s { font-family:'Inter',sans-serif; font-weight:500; font-size:6.5pt; letter-spacing:0.5em; padding-left:0.5em; color:#A16207; margin-top:1.5mm; }
+  .head .meta { margin-left:auto; text-align:right; font-family:'Inter',sans-serif; font-size:7.5pt; letter-spacing:0.18em; text-transform:uppercase; color:#64748B; line-height:1.7; }
+  /* body placeholder */
+  .body { padding:16mm 0; min-height:170mm; color:#334155; font-size:11pt; line-height:1.7; }
+  .body .placeholder { color:#94A3B8; }
+  /* footer */
+  .foot { position:absolute; left:22mm; right:22mm; bottom:16mm; display:flex; justify-content:space-between;
+    align-items:center; padding-top:5mm; border-top:1px solid #E2E8F0;
+    font-family:'Inter',sans-serif; font-size:7.5pt; letter-spacing:0.1em; color:#64748B; }
+  .foot .g { color:#A16207; font-weight:500; }
+</style></head>
+<body>
+  <div class="sheet">
+    <header class="head">
+      <img class="seal" src="../logos/niqo-services-emblem.png" alt="Niqo Services" />
+      <div class="sep"></div>
+      <div class="wm"><div class="n">NIQO</div><div class="s">SERVICES</div></div>
+      <div class="meta">Cabinet de services numériques<br>Brazzaville · Paris</div>
+    </header>
+
+    <section class="body">
+      <p class="placeholder">[ Corps de la lettre — remplacez ce texte. Le corps utilise Source Sans 3, 11 pt, interligne 1,7. ]</p>
+    </section>
+
+    <footer class="foot">
+      <span>Niqo Services — 1 avenue Amílcar Cabral, Brazzaville</span>
+      <span class="g">niqo.services</span>
+      <span>+242 06 000 0000</span>
+    </footer>
+  </div>
+</body></html>

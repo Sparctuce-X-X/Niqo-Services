@@ -1,0 +1,49 @@
+/* ============================================================================
+   Niqo Services — CSS custom properties (fallback / framework-agnostic)
+   Mirrors tokens.json. Import once at the root of your app.
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Inter:wght@500;600&family=Source+Sans+3:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap');
+
+:root {
+  /* ---- Colour ---------------------------------------------------------- */
+  --color-navy-950: #0F172A;   /* primary text, dark surfaces, seal bg     */
+  --color-navy-800: #1E3A8A;   /* secondary, links, hover                  */
+  --color-or-700:   #A16207;   /* accent — hairlines, fine details         */
+  --color-or-400:   #D4A053;   /* accent on dark backgrounds               */
+  --color-ivoire:   #F8FAFC;   /* light surface, seal silhouette           */
+  --color-ardoise-500: #64748B;/* secondary text, captions                 */
+  --color-ardoise-950: #020617;/* body text on light                       */
+  --color-blanc:    #FFFFFF;   /* card surface, max contrast               */
+  --color-destructive: #DC2626;/* errors only                              */
+
+  /* ---- Type families --------------------------------------------------- */
+  --font-title:   'Manrope', system-ui, sans-serif;      /* headings        */
+  --font-tracked: 'Inter', system-ui, sans-serif;        /* tracked caps    */
+  --font-body:    'Source Sans 3', system-ui, sans-serif;/* body            */
+  --font-mono:    'JetBrains Mono', monospace;           /* code / data     */
+
+  /* ---- Tracking -------------------------------------------------------- */
+  --tracking-title: -0.02em;   /* titles > 36px            */
+  --tracking-tracked: 0.28em;  /* eyebrows / labels        */
+  --tracking-tracked-wide: 0.55em; /* SERVICES wordmark    */
+}
+
+/* Convenience base styles (optional) */
+body {
+  font-family: var(--font-body);
+  color: var(--color-ardoise-950);
+  background: var(--color-ivoire);
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-title);
+  color: var(--color-navy-950);
+  letter-spacing: var(--tracking-title);
+}
+.eyebrow {
+  font-family: var(--font-tracked);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-tracked);
+  color: var(--color-or-700);
+}
+a { color: var(--color-navy-800); }
