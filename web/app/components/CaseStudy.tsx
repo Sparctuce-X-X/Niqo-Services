@@ -8,7 +8,7 @@ const t = {
     title: "Bulletins trimestriels : 3 semaines de production réduites à 3 jours.",
     client: "Groupe scolaire Dom Helder Camara · Brazzaville",
     students: "1 500+ élèves",
-    body: "Plateforme sur-mesure conçue et livrée qui digitalise l'intégralité du processus de bulletins — saisie des notes par les enseignants, calculs automatiques selon les coefficients de l'établissement, génération PDF aux couleurs de l'école, distribution aux familles, archive permanente.",
+    body: "Plateforme sur-mesure conçue et livrée qui digitalise l'intégralité du processus de bulletins saisie des notes par les enseignants, calculs automatiques selon les coefficients de l'établissement, génération PDF aux couleurs de l'école, distribution aux familles, archive permanente.",
     stats: {
       beforeLabel: "Avant",
       beforeValue: "3 semaines",

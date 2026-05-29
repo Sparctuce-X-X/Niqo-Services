@@ -22,7 +22,7 @@ const t = {
         name: "Niqo Marketplace",
         tagline: "Achète. Vends. En confiance.",
         description:
-          "Marketplace mobile de confiance à Brazzaville — vérification CNI obligatoire, notation post-rendez-vous, chat tracé, paiement direct entre utilisateurs. Zéro commission, modération sous 24 h. Une alternative sécurisée à WhatsApp et Facebook Marketplace.",
+          "Marketplace mobile de confiance à Brazzaville — vérification CNI , notation post-rendez-vous, chat tracé, paiement direct entre utilisateurs. Zéro commission, modération sous 24 h. Une alternative sécurisée à WhatsApp et Facebook Marketplace.",
         stats: [
           { label: "Plateforme", value: "iOS et Android" },
           { label: "Utilisateurs", value: "500+" },
