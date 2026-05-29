@@ -14,7 +14,7 @@ const founders: Founder[] = [
     initials: "DH",
     name: "Dominique Huang",
     role: "Co-fondateur · Ingénierie & IA",
-    bio: "Titulaire d'un bachelor Concepteur Développeur d'Applications et certifié AWS Solutions Architect Associate. Concepteur et développeur de Niqo Education, Niqo Marketplace et CloudCostPilot. Poursuit un MSc en Intelligence Artificielle.",
+    bio: "Titulaire d'un bachelor Concepteur Développeur d'Applications à Paris et certifié AWS Solutions Architect Associate. Concepteur et développeur de Niqo Education et  Niqo Marketplace . Poursuit un MSc en Intelligence Artificielle.",
   },
   {
     photo: "/founders/alain-makosso.jpeg",
