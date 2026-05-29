@@ -12,16 +12,16 @@ import { Footer } from "./components/Footer";
 export default function Home() {
   return (
     <>
-      <Header />
-      <Hero />
-      <ClientStrip />
-      <Services />
-      <CaseStudy />
-      <Products />
-      <Approach />
-      <Founders />
-      <Cta />
-      <Footer />
+      <Header locale="fr" />
+      <Hero locale="fr" />
+      <ClientStrip locale="fr" />
+      <Services locale="fr" />
+      <CaseStudy locale="fr" />
+      <Products locale="fr" />
+      <Approach locale="fr" />
+      <Founders locale="fr" />
+      <Cta locale="fr" />
+      <Footer locale="fr" />
     </>
   );
 }

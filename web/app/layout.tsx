@@ -34,14 +34,23 @@ export const metadata: Metadata = {
   title: "Niqo Services — Cabinet de services numériques",
   description:
     "Conception et livraison de plateformes sur-mesure pour les institutions premium. République du Congo.",
-  metadataBase: new URL("https://niqoservices.com"),
+  metadataBase: new URL("https://niqo-services.com"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      fr: "/",
+      en: "/en",
+      "x-default": "/",
+    },
+  },
   openGraph: {
     title: "Niqo Services",
     description: "Cabinet de services numériques · République du Congo",
     images: ["/brand/social/og-image-1200x630.png"],
     locale: "fr_FR",
+    alternateLocale: ["en_US"],
     type: "website",
-    url: "https://niqoservices.com",
+    url: "https://niqo-services.com",
   },
   icons: {
     icon: [

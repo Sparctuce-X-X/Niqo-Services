@@ -52,6 +52,12 @@ Voir `PRICING.md`. Devis en **FCFA** par défaut, EUR pour bailleurs internation
 Acompte 40/30/30 (abaissé à 30/40/30 pour écoles).
 Paiement Mobile Money MTN/Airtel, virement OHADA, virement EUR.
 
+## Coordonnées officielles
+
+- **Domaine** : `niqo-services.com` (avec tiret)
+- **Email pro** : `contact@niqo-services.com`
+- **WhatsApp / téléphone** : `+242 06 875 53 53` (Alain, Brazzaville)
+
 ## Identité visuelle
 
 Direction **"Cabinet Premium"** retenue le 2026-05-29.

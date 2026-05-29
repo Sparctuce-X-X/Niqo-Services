@@ -37,9 +37,14 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Traitement éditorial sobre pour les photos clients */
+/* Traitement éditorial sobre pour les photos clients (cas DHC, etc.) */
 .niqo-photo-treatment {
   filter: contrast(1.05) saturate(0.88);
+}
+
+/* Traitement noir & blanc pour les portraits fondateurs (registre cabinet) */
+.niqo-founder-treatment {
+  filter: grayscale(1) contrast(1.05) brightness(0.98);
 }
 
 /* Animation discrète d'entrée — restraint > flash */

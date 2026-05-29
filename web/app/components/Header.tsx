@@ -1,18 +1,54 @@
 import Image from "next/image";
 import { MobileMenu } from "./MobileMenu";
 
-const WHATSAPP_NUMBER = "242000000000";
-const WHATSAPP_MESSAGE =
+const WHATSAPP_NUMBER = "242068755353";
+const WHATSAPP_MESSAGE_FR =
   "Bonjour, j'aimerais cadrer un projet avec Niqo Services.";
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-  WHATSAPP_MESSAGE
-)}`;
+const WHATSAPP_MESSAGE_EN =
+  "Hello, I'd like to start a conversation with Niqo Services.";
 
-export function Header() {
+type Locale = "fr" | "en";
+
+const t = {
+  fr: {
+    nav: {
+      expertises: "Expertises",
+      references: "Références",
+      methode: "Méthode",
+      fondateurs: "Fondateurs",
+      contact: "Contact",
+    },
+    cta: "Cadrer un projet",
+    whatsappMessage: WHATSAPP_MESSAGE_FR,
+  },
+  en: {
+    nav: {
+      expertises: "Expertise",
+      references: "Case studies",
+      methode: "Method",
+      fondateurs: "Founders",
+      contact: "Contact",
+    },
+    cta: "Start a conversation",
+    whatsappMessage: WHATSAPP_MESSAGE_EN,
+  },
+};
+
+export function Header({ locale = "fr" }: { locale?: Locale }) {
+  const c = t[locale];
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    c.whatsappMessage
+  )}`;
+  const homeHref = locale === "en" ? "/en" : "/";
+
   return (
     <header className="sticky top-0 z-50 bg-navy-950 border-b border-ivoire/10">
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center group" aria-label="Niqo Services">
+        <a
+          href={homeHref}
+          className="flex items-center group"
+          aria-label="Niqo Services"
+        >
           <Image
             src="/brand/logos/png/niqo-services-horizontal-dark@1x.png"
             alt="Niqo Services"
@@ -24,35 +60,63 @@ export function Header() {
 
         <nav className="hidden md:flex items-center gap-10 font-tracked text-xs tracking-tracked uppercase text-ivoire/75">
           <a href="#expertises" className="hover:text-or-400 transition-colors">
-            Expertises
+            {c.nav.expertises}
           </a>
           <a href="#references" className="hover:text-or-400 transition-colors">
-            Références
+            {c.nav.references}
           </a>
           <a href="#methode" className="hover:text-or-400 transition-colors">
-            Méthode
+            {c.nav.methode}
           </a>
           <a
             href="#fondateurs"
             className="hover:text-or-400 transition-colors"
           >
-            Fondateurs
+            {c.nav.fondateurs}
           </a>
           <a href="#contact" className="hover:text-or-400 transition-colors">
-            Contact
+            {c.nav.contact}
           </a>
         </nav>
 
-        <a
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center justify-center px-5 py-2.5 bg-ivoire text-navy-950 font-tracked text-xs font-medium tracking-tracked uppercase hover:bg-or-400 transition-colors"
-        >
-          Cadrer un projet
-        </a>
+        <div className="hidden md:flex items-center gap-6">
+          <div className="flex items-center gap-2 font-tracked text-[11px] tracking-tracked uppercase">
+            <a
+              href="/"
+              className={
+                locale === "fr"
+                  ? "text-or-400"
+                  : "text-ivoire/50 hover:text-ivoire transition-colors"
+              }
+              aria-current={locale === "fr" ? "page" : undefined}
+            >
+              FR
+            </a>
+            <span className="text-ivoire/30">/</span>
+            <a
+              href="/en"
+              className={
+                locale === "en"
+                  ? "text-or-400"
+                  : "text-ivoire/50 hover:text-ivoire transition-colors"
+              }
+              aria-current={locale === "en" ? "page" : undefined}
+            >
+              EN
+            </a>
+          </div>
 
-        <MobileMenu />
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-5 py-2.5 bg-ivoire text-navy-950 font-tracked text-xs font-medium tracking-tracked uppercase hover:bg-or-400 transition-colors"
+          >
+            {c.cta}
+          </a>
+        </div>
+
+        <MobileMenu locale={locale} />
       </div>
     </header>
   );

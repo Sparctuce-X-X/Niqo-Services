@@ -2,23 +2,47 @@
 
 import { useEffect, useState } from "react";
 
-const WHATSAPP_NUMBER = "242000000000";
-const WHATSAPP_MESSAGE =
-  "Bonjour, j'aimerais cadrer un projet avec Niqo Services.";
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-  WHATSAPP_MESSAGE
-)}`;
+const WHATSAPP_NUMBER = "242068755353";
 
-const links = [
-  { href: "#expertises", label: "Expertises" },
-  { href: "#references", label: "Références" },
-  { href: "#methode", label: "Méthode" },
-  { href: "#fondateurs", label: "Fondateurs" },
-  { href: "#contact", label: "Contact" },
-];
+type Locale = "fr" | "en";
 
-export function MobileMenu() {
+const t = {
+  fr: {
+    links: [
+      { href: "#expertises", label: "Expertises" },
+      { href: "#references", label: "Références" },
+      { href: "#methode", label: "Méthode" },
+      { href: "#fondateurs", label: "Fondateurs" },
+      { href: "#contact", label: "Contact" },
+    ],
+    cta: "Cadrer un projet",
+    whatsappMessage:
+      "Bonjour, j'aimerais cadrer un projet avec Niqo Services.",
+    open: "Ouvrir le menu",
+    close: "Fermer le menu",
+  },
+  en: {
+    links: [
+      { href: "#expertises", label: "Expertise" },
+      { href: "#references", label: "Case studies" },
+      { href: "#methode", label: "Method" },
+      { href: "#fondateurs", label: "Founders" },
+      { href: "#contact", label: "Contact" },
+    ],
+    cta: "Start a conversation",
+    whatsappMessage:
+      "Hello, I'd like to start a conversation with Niqo Services.",
+    open: "Open menu",
+    close: "Close menu",
+  },
+};
+
+export function MobileMenu({ locale = "fr" }: { locale?: Locale }) {
   const [open, setOpen] = useState(false);
+  const c = t[locale];
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    c.whatsappMessage
+  )}`;
 
   useEffect(() => {
     if (open) {
@@ -37,7 +61,7 @@ export function MobileMenu() {
         type="button"
         onClick={() => setOpen(!open)}
         className="text-ivoire p-2 -mr-2"
-        aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+        aria-label={open ? c.close : c.open}
         aria-expanded={open}
       >
         {open ? (
@@ -70,7 +94,7 @@ export function MobileMenu() {
       {open && (
         <div className="fixed inset-x-0 top-16 bottom-0 z-40 bg-navy-950 overflow-y-auto">
           <nav className="flex flex-col px-6 pt-6 pb-10">
-            {links.map((link) => (
+            {c.links.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
@@ -81,14 +105,34 @@ export function MobileMenu() {
               </a>
             ))}
 
+            <div className="flex items-center gap-3 pt-6 pb-2 font-tracked text-xs tracking-tracked uppercase text-ivoire/60">
+              <a
+                href="/"
+                className={
+                  locale === "fr" ? "text-or-400" : "hover:text-ivoire"
+                }
+              >
+                Français
+              </a>
+              <span className="text-ivoire/30">·</span>
+              <a
+                href="/en"
+                className={
+                  locale === "en" ? "text-or-400" : "hover:text-ivoire"
+                }
+              >
+                English
+              </a>
+            </div>
+
             <a
-              href={WHATSAPP_URL}
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="mt-10 inline-flex items-center justify-center px-8 py-4 bg-ivoire text-navy-950 font-tracked text-sm font-medium tracking-tracked uppercase hover:bg-or-400 transition-colors"
+              className="mt-6 inline-flex items-center justify-center px-8 py-4 bg-ivoire text-navy-950 font-tracked text-sm font-medium tracking-tracked uppercase hover:bg-or-400 transition-colors"
             >
-              Cadrer un projet
+              {c.cta}
             </a>
           </nav>
         </div>
