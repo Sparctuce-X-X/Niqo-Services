@@ -13,7 +13,6 @@ const t = {
       { href: "#references", label: "Références" },
       { href: "#methode", label: "Méthode" },
       { href: "#fondateurs", label: "Fondateurs" },
-      { href: "#contact", label: "Contact" },
     ],
     cta: "Cadrer un projet",
     whatsappMessage:
@@ -27,7 +26,6 @@ const t = {
       { href: "#references", label: "Case studies" },
       { href: "#methode", label: "Method" },
       { href: "#fondateurs", label: "Founders" },
-      { href: "#contact", label: "Contact" },
     ],
     cta: "Start a conversation",
     whatsappMessage:

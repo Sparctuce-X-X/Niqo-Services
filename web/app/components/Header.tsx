@@ -16,7 +16,6 @@ const t = {
       references: "Références",
       methode: "Méthode",
       fondateurs: "Fondateurs",
-      contact: "Contact",
     },
     cta: "Cadrer un projet",
     whatsappMessage: WHATSAPP_MESSAGE_FR,
@@ -27,7 +26,6 @@ const t = {
       references: "Case studies",
       methode: "Method",
       fondateurs: "Founders",
-      contact: "Contact",
     },
     cta: "Start a conversation",
     whatsappMessage: WHATSAPP_MESSAGE_EN,
@@ -58,7 +56,7 @@ export function Header({ locale = "fr" }: { locale?: Locale }) {
           />
         </a>
 
-        <nav className="hidden md:flex items-center gap-10 font-tracked text-xs tracking-tracked uppercase text-ivoire/75">
+        <nav className="hidden md:flex items-center gap-8 lg:gap-10 font-tracked text-xs tracking-tracked uppercase text-ivoire/75">
           <a href="#expertises" className="hover:text-or-400 transition-colors">
             {c.nav.expertises}
           </a>
@@ -74,12 +72,9 @@ export function Header({ locale = "fr" }: { locale?: Locale }) {
           >
             {c.nav.fondateurs}
           </a>
-          <a href="#contact" className="hover:text-or-400 transition-colors">
-            {c.nav.contact}
-          </a>
         </nav>
 
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center">
           <div className="flex items-center gap-2 font-tracked text-[11px] tracking-tracked uppercase">
             <a
               href="/"
@@ -105,6 +100,11 @@ export function Header({ locale = "fr" }: { locale?: Locale }) {
               EN
             </a>
           </div>
+
+          <span
+            aria-hidden="true"
+            className="mx-6 h-5 w-px bg-ivoire/15"
+          />
 
           <a
             href={whatsappUrl}
