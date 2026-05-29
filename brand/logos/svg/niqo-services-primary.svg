@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320" role="img" aria-label="NIQO SERVICES">
+  <defs>
+    
+  </defs>
+  <text x="403" y="170" text-anchor="middle" font-family="&#39;Manrope&#39;, system-ui, sans-serif" font-weight="600" font-size="132" letter-spacing="5.3" fill="#0F172A">NIQO</text>
+  <line x1="312" y1="206" x2="500" y2="206" stroke="#A16207" stroke-width="2"></line>
+  <text x="406.6" y="246" text-anchor="middle" font-family="&#39;Inter&#39;, system-ui, sans-serif" font-weight="500" font-size="24" letter-spacing="13.2" fill="#0F172A">SERVICES</text>
+</svg>

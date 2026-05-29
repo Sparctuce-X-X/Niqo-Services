@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<title>Niqo Services — Carte de visite (recto)</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600&family=Inter:wght@500&family=Source+Sans+3:wght@400&display=swap" rel="stylesheet">
+<style>
+  /* 85×55mm trim + 3mm bleed = 91×61mm */
+  @page { size: 91mm 61mm; margin: 0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:91mm; height:61mm; }
+  .card { position:relative; width:91mm; height:61mm; background:#0F172A; color:#F8FAFC; overflow:hidden;
+    font-family:'Source Sans 3',sans-serif; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .safe { position:absolute; inset:3mm; }
+  .wm { position:absolute; top:9mm; left:50%; transform:translateX(-50%); text-align:center; }
+  .wm .n { font-family:'Manrope',sans-serif; font-weight:600; font-size:30pt; letter-spacing:0.04em; line-height:1; }
+  .wm .hair { height:1.5px; background:#A16207; width:62%; margin:3mm auto 2.5mm; }
+  .wm .s { font-family:'Inter',sans-serif; font-weight:500; font-size:7.5pt; letter-spacing:0.55em; padding-left:0.55em; }
+  .rule { position:absolute; top:26mm; left:50%; transform:translateX(-50%); width:46mm; height:1px; background:#A16207; opacity:.85; }
+  .info { position:absolute; left:7mm; bottom:8mm; }
+  .info .name { font-family:'Manrope',sans-serif; font-weight:600; font-size:13pt; letter-spacing:0; }
+  .info .role { font-family:'Inter',sans-serif; font-weight:500; font-size:7pt; letter-spacing:0.22em; text-transform:uppercase; color:#D4A053; margin:1.5mm 0 3mm; }
+  .info .line { font-size:8.5pt; line-height:1.5; color:#F8FAFC; }
+  .info .line a { color:#F8FAFC; text-decoration:none; }
+  .seal { position:absolute; right:6mm; bottom:6mm; width:14mm; height:14mm; }
+</style></head>
+<body>
+  <div class="card">
+    <div class="wm">
+      <div class="n">NIQO</div>
+      <div class="hair"></div>
+      <div class="s">SERVICES</div>
+    </div>
+    <div class="rule"></div>
+    <div class="info">
+      <div class="name">Dominique Huang</div>
+      <div class="role">Associé · Technologie</div>
+      <div class="line"><a href="mailto:dominique@niqo.services">dominique@niqo.services</a></div>
+      <div class="line">+242 06 000 0000</div>
+      <div class="line"><a href="https://niqo.services">niqo.services</a></div>
+    </div>
+    <img class="seal" src="../logos/niqo-services-emblem.png" alt="Niqo Services" />
+  </div>
+</body></html>
