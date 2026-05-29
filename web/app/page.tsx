@@ -3,6 +3,7 @@ import { Hero } from "./components/Hero";
 import { ClientStrip } from "./components/ClientStrip";
 import { Services } from "./components/Services";
 import { CaseStudy } from "./components/CaseStudy";
+import { Products } from "./components/Products";
 import { Approach } from "./components/Approach";
 import { Founders } from "./components/Founders";
 import { Cta } from "./components/Cta";
@@ -16,6 +17,7 @@ export default function Home() {
       <ClientStrip />
       <Services />
       <CaseStudy />
+      <Products />
       <Approach />
       <Founders />
       <Cta />
