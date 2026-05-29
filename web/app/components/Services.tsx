@@ -34,7 +34,7 @@ const services = [
     deliverables: [
       "Audits et diagnostics",
       "Architecture et migrations cloud",
-      "FinOps et monitoring",
+      "Monitoring et supervision",
       "Formations intra-entreprise",
     ],
   },
