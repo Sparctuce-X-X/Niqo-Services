@@ -15,10 +15,10 @@ const t = {
     presence: [
       "Brazzaville — siège",
       "Pointe-Noire",
-      "Couverture nationale",
+      "Afrique francophone",
     ],
-    copyright: "MMXXVI Niqo Services. Tous droits réservés.",
-    territory: "République du Congo",
+    copyright: "© MMXXVI Niqo Services. Tous droits réservés.",
+    territory: "Afrique francophone · siège République du Congo",
     whatsappMessage:
       "Bonjour, j'aimerais cadrer un projet avec Niqo Services.",
   },
@@ -32,10 +32,10 @@ const t = {
     presence: [
       "Brazzaville — headquarters",
       "Pointe-Noire",
-      "Nationwide coverage",
+      "French-speaking Africa",
     ],
-    copyright: "MMXXVI Niqo Services. All rights reserved.",
-    territory: "Republic of Congo",
+    copyright: "© MMXXVI Niqo Services. All rights reserved.",
+    territory: "French-speaking Africa · HQ Republic of Congo",
     whatsappMessage:
       "Hello, I'd like to start a conversation with Niqo Services.",
   },

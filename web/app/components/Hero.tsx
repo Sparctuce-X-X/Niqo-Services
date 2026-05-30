@@ -6,20 +6,20 @@ type Locale = "fr" | "en";
 
 const t = {
   fr: {
-    eyebrow: "Cabinet de services numériques · République du Congo",
+    eyebrow: "Cabinet de services numériques · Afrique francophone",
     h1: "Des plateformes sur-mesure pour les institutions qui exigent rigueur et continuité.",
     subtitle:
-      "Conception, ingénierie et accompagnement de projets numériques pour les écoles privées, ONG, banques et administrations. Présence opérationnelle sur tout le territoire de la République du Congo.",
+      "Conception, ingénierie et accompagnement de projets numériques pour les écoles privées, PME, cabinets, ONG et institutions. Présence sur l'Afrique francophone, siège en République du Congo (Brazzaville · Pointe-Noire).",
     ctaPrimary: "Cadrer un projet",
     ctaSecondary: "Voir nos références",
     whatsappMessage:
       "Bonjour, j'aimerais cadrer un projet avec Niqo Services.",
   },
   en: {
-    eyebrow: "Digital engineering firm · Republic of Congo",
+    eyebrow: "Digital engineering firm · French-speaking Africa",
     h1: "Bespoke platforms for institutions that demand rigor and continuity.",
     subtitle:
-      "Design, engineering and end-to-end delivery of digital projects for private schools, NGOs, banks and government agencies. Operational presence across the Republic of Congo.",
+      "Design, engineering and end-to-end delivery of digital projects for private schools, SMEs, firms, NGOs and institutions. Present across French-speaking Africa, headquartered in the Republic of Congo (Brazzaville · Pointe-Noire).",
     ctaPrimary: "Start a conversation",
     ctaSecondary: "See our case studies",
     whatsappMessage:

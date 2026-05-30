@@ -13,7 +13,7 @@ import { Footer } from "../components/Footer";
 export const metadata: Metadata = {
   title: "Niqo Services — Digital engineering firm",
   description:
-    "Bespoke design and delivery of platforms for premium institutions. Republic of Congo.",
+    "Bespoke design and delivery of platforms for premium institutions. French-speaking Africa, headquartered in the Republic of Congo.",
   alternates: {
     canonical: "/en",
     languages: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Niqo Services",
-    description: "Digital engineering firm · Republic of Congo",
+    description: "Digital engineering firm · French-speaking Africa",
     images: ["/brand/social/og-image-1200x630.png"],
     locale: "en_US",
     type: "website",

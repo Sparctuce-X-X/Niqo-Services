@@ -33,7 +33,7 @@ const jetbrains = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Niqo Services — Cabinet de services numériques",
   description:
-    "Conception et livraison de plateformes sur-mesure pour les institutions premium. République du Congo.",
+    "Conception et livraison de plateformes sur-mesure pour les institutions premium. Afrique francophone, siège en République du Congo.",
   metadataBase: new URL("https://niqo-services.com"),
   alternates: {
     canonical: "/",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Niqo Services",
-    description: "Cabinet de services numériques · République du Congo",
+    description: "Cabinet de services numériques · Afrique francophone",
     images: ["/brand/social/og-image-1200x630.png"],
     locale: "fr_FR",
     alternateLocale: ["en_US"],
